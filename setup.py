@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 requirements = ['aiohttp>=3.7.4,<4.0.0']
 
 setuptools.setup(
-    name="async_osu_api",
+    name="AsyncOsu",
     version="0.0.1",
     author="Efehan Atıcı",
     author_email="efehanatici@gmail.com",

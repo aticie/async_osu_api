@@ -1,6 +1,6 @@
 <div align="center">
 
-# Async osu! Api
+# AsyncOsu
 
 </div>
 
@@ -13,11 +13,13 @@ Basic usage with context manager:
 
 ```python
 import asyncio
-from async_osu_api import OsuApiV2
+from AsyncOsu import OsuApiV2
+
 
 async def main():
     async with OsuApiV2(client_id='client_id', client_secret='client_secret') as osu_api:
         return await osu_api.get_user_from_username(f'heyronii')
+
 
 if __name__ == "__main__":
     print(asyncio.run(main()))

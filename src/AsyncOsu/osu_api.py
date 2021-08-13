@@ -6,7 +6,7 @@ from typing import List, Dict, Optional, Type
 
 import aiohttp
 
-logger = logging.getLogger('async_osu_api')
+logger = logging.getLogger('AsyncOsu')
 logger.addHandler(logging.NullHandler())
 
 
@@ -160,11 +160,3 @@ class OsuApiV2:
                            f' or use a context manager before deleting this instance. If more objects created, '
                            f'this will lead to resource exhaustion.')
             return
-
-
-async def main():
-    async with OsuApiV2(client_id='2408', client_secret='6gnfhWeBZlCgHkrk68HIEuBtlPi6X8cM51GuVMel') as osu_api:
-        return await osu_api.get_user_from_username('heyronii')
-
-if __name__ == "__main__":
-    print(asyncio.run(main()))
