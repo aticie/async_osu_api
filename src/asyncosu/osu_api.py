@@ -6,7 +6,7 @@ from typing import List, Dict, Optional, Type
 
 import aiohttp
 
-logger = logging.getLogger('AsyncOsu')
+logger = logging.getLogger('asyncosu')
 logger.addHandler(logging.NullHandler())
 
 

@@ -13,7 +13,7 @@ Basic usage with context manager:
 
 ```python
 import asyncio
-from AsyncOsu import OsuApiV2
+from asyncosu import OsuApiV2
 
 
 async def main():
